@@ -1,0 +1,114 @@
+/* RESPONSIVE */
+/* mobile first */
+.logo-hn {
+  display: none;
+}
+
+/* tablet and larger */
+@media only screen and (min-width: 768px) {
+  .logo-hn {
+    display: block;
+  }
+  .logo-hn img {
+    width: 100px;
+  }
+  #nav {
+    height: 70px;
+  }
+  .menu-list {
+    flex-direction: row;
+  }
+  li {
+    padding: 22.5px 0;
+    /* có cách khác không? */
+  }
+
+  /* thẻ nội dung */
+  .flex {
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .content .card {
+    width: 30%;
+    margin: 30px;
+  }
+
+  /* footer */
+  .footer {
+    justify-content: space-between;
+  }
+  .footer img {
+    border-radius: 50%;
+  }
+
+  /* trang giới thiệu */
+  .main-place {
+    position: relative;
+    pointer-events: auto;
+  }
+  .image {
+    opacity: 1;
+    display: block;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+  }
+
+  .middle {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+  .main-place:hover .image {
+    opacity: 0.3;
+  }
+
+  .main-place:hover .middle {
+    opacity: 1;
+  }
+
+  .text {
+    height: 400px;
+    width: 700px;
+    background-color: rgb(247, 247, 151);
+    color: black;
+    font-size: 16px;
+    padding: 16px 32px;
+    text-align: center;
+  }
+  .text li {
+    padding: 15px 0;
+    list-style-type: none;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    margin: 20px 60px;
+    column-gap: 10px;
+    row-gap: 40px;
+  }
+  .grid img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /* giải trí */
+  .etm-list {
+    width: 10%;
+    height: 300px; /* chiều cao 100% */
+    position: fixed; /* cố định thanh điều hướng cả khi cuộn để đọc website */
+    overflow: auto; /* nếu nội dung quá dài sẽ có thêm thanh cuộn để xem phần còn lại */
+padding-left: 10px ;  
+  }
+  .etm-content{
+    width: 70%;
+  }
+}
+
+

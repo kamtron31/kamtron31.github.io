@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: rgb(196, 212, 233);
+}
+body {
+  font-family: "Lora", serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+/* menu */
+#nav {
+  /* height: 70px; */
+  display: flex;
+  background-color: lightsteelblue;
+  align-items: center;
+}
+#nav .logo-hn {
+  flex: 25%;
+}
+
+#nav .logo-hn img:hover {
+  border: crimson solid 3px ;
+}
+
+#nav .menu {
+  flex: 75%;
+}
+.menu ul {
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+}
+.menu li a {
+  color: black;
+  display: block;
+  text-align: center;
+}
+li {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  padding: 8px 0;
+}
+.menu-list {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+.menu-list li:hover {
+  background-color: rgb(114, 166, 245);
+}
+.menu-list a {
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+}
+.menu-list li:hover > a {
+  color: white;
+}
+/* menu end */
+
+/* main */
+#main {
+  background-color: rgb(196, 212, 233);
+}
+
+.welcome-pic {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#main .welcome-text {
+  width: 80%;
+  margin: auto;
+  padding: 30px 0;
+  line-height: 1.5;
+  font-size: 18px;
+  text-align: justify;
+}
+.welcome-text h1 {
+  text-align: center;
+}
+
+/* thẻ nội dung */
+.card {
+  background: linear-gradient(35deg, #ccffff, #ffcccc);
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px 30px;
+  margin: 10px 30px;
+  text-align: center;
+}
+.content .card {
+  margin: 40px;
+}
+.card:hover {
+  transform: translateY(-15px);
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+/* main - end */
+/* Footer */
+.footer {
+  padding: 20px 30px;
+  background-color: rgb(140, 197, 250);
+  margin-top: auto;
+}
+.footer-text {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.footer-text,
+.social {
+  align-items: center;
+}
+
+.social {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.social a {
+  padding: 0 20px;
+}
+
+.ti-facebook:hover {
+  color: #1773ea;
+}
+
+.ti-instagram:hover {
+  color: #b32e87;
+}
+
+.ti-twitter:hover {
+  color: #1c9cea;
+}
+
+/* css trang vị trí */
+.main-place{
+  pointer-events: none;
+  background-color: rgb(208, 250, 208);
+}
+
+.text, .hn-location-text {
+  width: 80%;
+  padding: 30px 0;
+  line-height: 1.5;
+  font-size: 18px;
+  text-align: justify;
+  margin: auto;
+}
+.text h3,
+.hn-location-text h3{
+  text-align: center;
+  color: orangered;
+}
+
+.text li {
+  list-style-type: circle;
+} 
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  color: black;
+  border:rgb(196, 192, 255)e;
+  border-radius: 5px;
+  text-align: center;
+  width: 300px;
+  margin: 20px auto;
+
+}
+
+.btn-outline {
+  background-color:plum;
+  border: 1px black solid;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+}
+
+
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-rows: auto;
+}
+.grid img{
+  width: 80%;
+  margin: auto;
+  object-fit: cover;
+}
+
+/* giải trí */
+.grid-etm{
+  display: grid;
+  column-gap: 20px;
+  line-height: 1.4;
+  font-size: 17;
+}
+.etm-list{
+  width: 80%;
+  padding-left: 40px;
+
+  margin: 20px auto 0 auto;
+  border: 1px solid #b32e87; 
+  background-color: #f5d7d7;
+  
+}
+.etm-list a:hover{
+  color: blue;
+  font-size: 20px;
+}
+.etm-content h2, 
+.fes-content h2
+.food-content h2{
+text-align: center;
+}
+.etm-content h4{
+  color: red;
+  font-style: italic;
+}
+.etm-content img,
+.fes-content img{
+  width: 100%;
+  margin: auto;
+  
+}
+.etm-content,
+.fes-content,
+.food-content{
+  width: 80%;
+  margin: auto;
+  padding: 30px 0;
+  line-height: 1.5;
+  font-size: 18px;
+  text-align: justify;
+}
+.bg-color{
+  margin: auto;
+width: 90%;
+  background-color: cornsilk;
+}
+.etm-content ul li,
+.food-content ul li
+  {
+  list-style: square;
+  padding: 2px;
+  list-style-position: inside;
+  
+}
+
+
+
+/* for fun */
+#fun {
+  position:relative;
+  width: 100%;
+  height: 50px;
+  margin: 10px auto;
+  bottom: 0;
+  left: 10%;
+  border-radius: 20%;
+  background: white;
+  color: red;
+  animation-name: fade;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fade {
+  25%{
+    color: green;
+  }
+  50% {
+    left: 80%;
+    
+opacity: 0.1
+  }
+  100%{
+    color: blueviolet;
+  }
+}
+
