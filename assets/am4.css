@@ -11,6 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  position: relative;
 }
 img {
   display: block;
@@ -281,18 +282,20 @@ width: 90%;
 
 
 /* for fun */
-#fun {
-  position:relative;
+#fun
+{overflow: hidden;
+}
+
+.animation {
+  position: relative;
+
   width: 100%;
-  height: 50px;
   margin: 10px auto;
-  bottom: 0;
+  bottom: 0px;
   left: 10%;
-  border-radius: 20%;
-  background: white;
   color: red;
   animation-name: fade;
-  animation-duration: 8s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
@@ -303,11 +306,8 @@ width: 90%;
   }
   50% {
     left: 80%;
-    
 opacity: 0.1
   }
-  100%{
-    color: blueviolet;
-  }
+ 
 }
 
