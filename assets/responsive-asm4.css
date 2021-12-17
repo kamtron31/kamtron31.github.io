@@ -104,11 +104,12 @@
     height: 300px; /* chiều cao 100% */
     position: fixed; /* cố định thanh điều hướng cả khi cuộn để đọc website */
     overflow: auto; /* nếu nội dung quá dài sẽ có thêm thanh cuộn để xem phần còn lại */
-padding-left: 10px ;  
+    padding-left: 10px;
   }
-  .etm-content{
+  .etm-content {
     width: 70%;
   }
+  #fun {
+    display: block;
+  }
 }
-
-
