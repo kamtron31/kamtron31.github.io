@@ -371,6 +371,13 @@ li {
   list-style-position: inside;
 }
 
+/* homepage back */
+.homepage-back{
+  background-color: var(--primary-color);
+  width: 100%;
+  text-align: center;
+
+}
 /* for fun */
 #fun {
   overflow: hidden;
@@ -379,8 +386,8 @@ li {
 
 .animation {
   position: relative;
-  width: 100%;
-  margin: 10px auto;
+  width: 200px;
+  /* margin: 10px auto; */
   bottom: 0px;
   left: 10%;
   color: red;
